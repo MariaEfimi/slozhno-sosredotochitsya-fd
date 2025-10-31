@@ -70,7 +70,9 @@
 
 .rec_empty::after { 
   content: ''; 
-  position: absolute; 
+  position: absolute;
+  top: 0;
+  left: 0; 
   display: none; 
   margin-top: 18px; 
   margin-left: 42px; 
@@ -329,10 +331,6 @@
     margin-top: 20px; 
   } 
 
-  .gallery__item { 
-    margin: 0; 
-  } 
-
   .sunset_pic { 
     grid-column: 1 / 3; 
   } 
@@ -367,9 +365,7 @@
   } 
 
   .footer_title { 
-    justify-content: center; 
     margin-top: 62px; 
-    text-align: center;
   } 
 } 
 
@@ -387,7 +383,6 @@
 
   .header { 
     margin-block-end: 0; 
-    min-block-size: 768px;
   } 
 
   .header_text { 
@@ -413,7 +408,6 @@
 
   .footer { 
     margin-top: 50px; 
-    min-block-size: 768px;
   } 
 
   .decorated-zone::after { 
@@ -434,7 +428,6 @@
   } 
 
   .section_what {
-  display: grid;
   grid-template-columns: 100% 1fr 1fr 1fr;
   grid-template-areas:
     "question_what question_what question_what" 
@@ -449,7 +442,6 @@
 
   .question_what {
   grid-area: question_what;
-  width: 30%;
   }
 
   .answers_what {
